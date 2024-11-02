@@ -1,7 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import DashboardCard from "../Pages/DashboardCard/DashboardCard";
-import SecondChart from "../Pages/SecondChart/SecondChart";
+
+import Login from "../Login/Login";
+import RegisterFrom from "../RegisterFrom/RegisterFrom";
 
 export const router = createBrowserRouter([
   {
@@ -13,8 +15,12 @@ export const router = createBrowserRouter([
         element: <DashboardCard></DashboardCard>,
       },
       {
-        path: "/",
-        element: <SecondChart></SecondChart>,
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <RegisterFrom></RegisterFrom>,
       },
     ],
   },
